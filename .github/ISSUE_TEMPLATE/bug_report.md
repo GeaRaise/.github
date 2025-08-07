@@ -1,3 +1,11 @@
+---
+name: Bug Report
+about: バグを報告する
+title: '[Bug] '
+labels: bug
+assignees: ''
+---
+
 ## 発生した事象
 
 <!-- こちらに不具合の概要を記載してください -->
