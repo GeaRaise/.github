@@ -1,0 +1,87 @@
+name: テスト
+description: テストに関する作業
+title: "[テスト] "
+labels: ["テスト"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        テスト作業に関するIssueです。テスト内容を詳しく記述してください。
+  - type: textarea
+    id: test-target
+    attributes:
+      label: テスト対象
+      description: テストする機能や範囲を記述してください
+      placeholder: 例：ユーザー登録機能のテスト
+    validations:
+      required: true
+  - type: checkboxes
+    id: test-type
+    attributes:
+      label: テスト種別
+      description: 該当するテスト種別を選択してください
+      options:
+        - label: 単体テスト
+        - label: 結合テスト
+        - label: システムテスト
+        - label: 性能テスト
+        - label: セキュリティテスト
+        - label: その他
+  - type: dropdown
+    id: test-environment
+    attributes:
+      label: テスト環境
+      description: テストを実行する環境を選択してください
+      options:
+        - 開発環境
+        - ステージング環境
+        - 本番環境
+        - ローカル環境
+    validations:
+      required: true
+  # - type: input
+  #   id: test-os
+  #   attributes:
+  #     label: OS
+  #     description: テスト環境のOSを記入してください
+  #     placeholder: 例：Ubuntu 20.04
+  # - type: input
+  #   id: test-browser
+  #   attributes:
+  #     label: ブラウザ
+  #     description: テスト環境のブラウザを記入してください
+  #     placeholder: 例：Chrome 96
+  # - type: textarea
+  #   id: test-cases
+  #   attributes:
+  #     label: テストケース
+  #     description: テストケースを記述してください
+  #     placeholder: |
+  #       | テストケース | 期待結果 | 実行結果 | 備考 |
+  #       |-------------|----------|----------|------|
+  #       | 正常なデータでの登録 | 登録成功 | | |
+  #       | 重複メールでの登録 | エラー表示 | | |
+  #     render: markdown
+  # - type: textarea
+  #   id: test-data
+  #   attributes:
+  #     label: テストデータ
+  #     description: 必要なテストデータや前提条件を記述してください
+  # - type: input
+  #   id: start-date
+  #   attributes:
+  #     label: 開始予定日
+  #     description: テスト開始予定日を記入してください
+  #     placeholder: 例：2024-01-01
+  # - type: input
+  #   id: end-date
+  #   attributes:
+  #     label: 完了予定日
+  #     description: テスト完了予定日を記入してください
+  #     placeholder: 例：2024-01-07
+  - type: textarea
+    id: notes
+    attributes:
+      label: 注意事項
+      description: テスト実行時の注意点があれば記述してください

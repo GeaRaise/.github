@@ -1,0 +1,66 @@
+name: 新機能要求
+description: 新しい機能の提案
+title: "[新機能] "
+labels: ["新機能"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        新機能の提案をお待ちしています！詳細を記入してください。
+  - type: textarea
+    id: feature-summary
+    attributes:
+      label: 機能概要
+      description: 提案する新機能の概要を記述してください
+      placeholder: 例：ダークモードの実装
+    validations:
+      required: true
+  - type: textarea
+    id: background
+    attributes:
+      label: 背景・理由
+      description: なぜこの機能が必要なのか、背景や理由を説明してください
+    validations:
+      required: true
+  - type: textarea
+    id: detailed-specification
+    attributes:
+      label: 詳細仕様
+      description: 機能の詳細な仕様や動作を記述してください
+    validations:
+      required: true
+  - type: textarea
+    id: use-cases
+    attributes:
+      label: ユースケース
+      description: この機能をどのような場面で使用するかを説明してください
+      placeholder: |
+        - ユーザーストーリー1：〜として、〜したい、なぜなら〜
+        - ユーザーストーリー2：〜として、〜したい、なぜなら〜
+  - type: textarea
+    id: ui-ux-design
+    attributes:
+      label: UI/UX案
+      description: 画面設計案やワイヤーフレームがあれば添付してください
+  - type: textarea
+    id: technical-considerations
+    attributes:
+      label: 技術的考慮事項
+      description: 技術的な制約や考慮すべき点があれば記述してください
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 優先度
+      description: 機能の優先度を選択してください
+      options:
+        - 高（緊急）
+        - 中（通常）
+        - 低（時間があるとき）
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: 参考資料
+      description: 参考になるサイトや資料があれば添付してください

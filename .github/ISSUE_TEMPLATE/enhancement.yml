@@ -1,0 +1,55 @@
+name: 改修対応
+description: 既存機能の改修や変更
+title: "[改修] "
+labels: ["改修"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        既存機能の改修に関するIssueです。改修内容を詳しく記述してください。
+  - type: textarea
+    id: improvement-content
+    attributes:
+      label: 改修内容
+      description: 改修したい内容を具体的に記述してください
+      placeholder: 例：ログイン画面のUIを改善したい
+    validations:
+      required: true
+  - type: textarea
+    id: improvement-reason
+    attributes:
+      label: 改修理由
+      description: なぜこの改修が必要なのかを説明してください
+      placeholder: 例：現在のUIが分かりにくく、ユーザビリティが低いため
+    validations:
+      required: true
+  - type: textarea
+    id: current-behavior
+    attributes:
+      label: 現在の動作
+      description: 現在の動作や状態を説明してください
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: 期待する動作
+      description: 改修後にどのような動作になることを期待するかを説明してください
+    validations:
+      required: true
+  - type: checkboxes
+    id: impact-scope
+    attributes:
+      label: 影響範囲
+      description: この改修による影響範囲を選択してください
+      options:
+        - label: UI
+        - label: API
+        - label: データベース
+        - label: その他
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: 追加情報
+      description: スクリーンショットや参考資料があれば添付してください

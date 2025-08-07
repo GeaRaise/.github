@@ -1,0 +1,94 @@
+name: バグ報告
+description: バグの報告
+title: "[バグ] "
+labels: ["バグ"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        バグを発見された場合は、以下の情報を記入してください。
+  - type: textarea
+    id: bug-summary
+    attributes:
+      label: バグの概要
+      description: バグの内容を簡潔に記述してください
+      placeholder: 例：ログインボタンを押してもログインできない
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: 再現手順
+      description: バグを再現するための手順を記述してください
+      placeholder: |
+        1. ログインページを開く
+        2. メールアドレスとパスワードを入力
+        3. ログインボタンをクリック
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: 期待される動作
+      description: 本来期待される正しい動作を記述してください
+    validations:
+      required: true
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: 実際の動作
+      description: 実際に発生している問題のある動作を記述してください
+    validations:
+      required: true
+  # - type: dropdown
+  #   id: os
+  #   attributes:
+  #     label: OS
+  #     description: 使用しているOSを選択してください
+  #     options:
+  #       - Windows 10
+  #       - Windows 11
+  #       - macOS Monterey
+  #       - macOS Ventura
+  #       - Ubuntu 20.04
+  #       - Ubuntu 22.04
+  #       - その他
+  #   validations:
+  #     required: true
+  # - type: dropdown
+  #   id: browser
+  #   attributes:
+  #     label: ブラウザ
+  #     description: 使用しているブラウザを選択してください
+  #     options:
+  #       - Chrome
+  #       - Firefox
+  #       - Safari
+  #       - Edge
+  #       - その他
+  #   validations:
+  #     required: true
+  # - type: input
+  #   id: version
+  #   attributes:
+  #     label: バージョン
+  #     description: アプリケーションのバージョンを記入してください
+  #     placeholder: 例：v1.2.3
+  # - type: textarea
+  #   id: error-logs
+  #   attributes:
+  #     label: エラーログ
+  #     description: エラーメッセージやログがあれば貼り付けてください
+  #     render: shell
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 補足
+      description: スクリーンショットや動画などがあれば
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: 追加情報
+      description: その他関連する情報があれば記述してください
