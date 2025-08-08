@@ -1,26 +1,19 @@
 name: 新機能要求
 description: 新しい機能の提案
 title: "[新機能] "
-labels: ["新機能"]
+labels: ["feature"]
 assignees: []
 body:
   - type: markdown
     attributes:
       value: |
-        新機能の提案をお待ちしています！詳細を記入してください。
+        新機能の詳細を記入してください。
   - type: textarea
     id: feature-summary
     attributes:
       label: 機能概要
       description: 提案する新機能の概要を記述してください
       placeholder: 例：ダークモードの実装
-    validations:
-      required: true
-  - type: textarea
-    id: background
-    attributes:
-      label: 背景・理由
-      description: なぜこの機能が必要なのか、背景や理由を説明してください
     validations:
       required: true
   - type: textarea
@@ -48,17 +41,6 @@ body:
     attributes:
       label: 技術的考慮事項
       description: 技術的な制約や考慮すべき点があれば記述してください
-  - type: dropdown
-    id: priority
-    attributes:
-      label: 優先度
-      description: 機能の優先度を選択してください
-      options:
-        - 高（緊急）
-        - 中（通常）
-        - 低（時間があるとき）
-    validations:
-      required: true
   - type: textarea
     id: references
     attributes:
