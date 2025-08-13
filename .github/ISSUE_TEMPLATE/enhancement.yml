@@ -9,14 +9,6 @@ body:
       value: |
         既存機能の改修に関するIssueです。改修内容を詳しく記述してください。
   - type: textarea
-    id: improvement-content
-    attributes:
-      label: 改修内容
-      description: 改修したい内容を具体的に記述してください
-      placeholder: 例：ログイン画面のUIを改善したい
-    validations:
-      required: true
-  - type: textarea
     id: current-behavior
     attributes:
       label: 現在の動作
